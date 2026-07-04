@@ -1,14 +1,14 @@
 # cua-local
 
-Computer Use-like local Mac control for AI assistants via MCP.
+Use ChatGPT with MCP to control your local Mac, similar to Computer Use.
 
-`cua-local` is a small local bridge that lets an MCP-compatible AI client observe and operate your own Mac in a controlled loop:
+`cua-local` is a small local bridge that lets ChatGPT, or another MCP-compatible AI client, observe and operate your own Mac in a controlled loop:
 
 ```txt
 observe -> act -> observe
 ```
 
-It can expose basic tools for reading app/screen state, moving the mouse, clicking, typing, scrolling, dragging, pressing keys, and opening URLs. Everything runs locally on macOS.
+It can expose basic tools for reading app/screen state, moving the mouse, clicking, typing, scrolling, dragging, pressing keys, and opening URLs. Everything runs locally on macOS, while the AI assistant connects through MCP.
 
 ## How it works
 
@@ -19,7 +19,7 @@ It can expose basic tools for reading app/screen state, moving the mouse, clicki
 - `screencapture` for screen observation
 - Swift + CGEvent for mouse movement, clicks, scroll, and drag
 
-It is inspired by the Computer Use idea, but it is not an official Computer Use client and not a full desktop automation product.
+In other words: it gives ChatGPT a local Computer Use-like control layer for your Mac through MCP. It is inspired by the Computer Use idea, but it is not an official Computer Use client and not a full desktop automation product.
 
 ## Quick start
 

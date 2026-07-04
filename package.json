@@ -1,7 +1,7 @@
 {
   "name": "cua-local",
   "version": "0.3.19",
-  "description": "Computer Use-like local Mac control for AI assistants via MCP.",
+  "description": "Use ChatGPT with MCP to control your local Mac, similar to Computer Use.",
   "type": "module",
   "bin": {
     "cua-local": "./cua-local.mjs"
