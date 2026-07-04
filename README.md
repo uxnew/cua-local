@@ -42,6 +42,19 @@ npm run demo
 
 `npm run doctor` prints a ready-to-copy MCP config for the current checkout.
 
+## Does it require DevSpace?
+
+No. `cua-local` itself is just a local MCP server and can run on its own.
+
+DevSpace is only one possible bridge when you want to call this local MCP server from ChatGPT. If your AI client can launch local MCP servers directly, you do not need DevSpace. If the client runs in the cloud and cannot directly reach your Mac, you need some bridge such as DevSpace, a tunnel, or another remote MCP connection layer.
+
+Typical setups:
+
+```txt
+Local MCP client -> cua-local -> your Mac
+ChatGPT -> DevSpace/tunnel/bridge -> cua-local -> your Mac
+```
+
 ## MCP config
 
 Use absolute paths on the target machine:
