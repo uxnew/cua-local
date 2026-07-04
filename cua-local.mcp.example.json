@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "computer-use-local": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/cua-local/cua-local.mjs"],
+      "cwd": "/ABSOLUTE/PATH/TO/cua-local"
+    }
+  }
+}

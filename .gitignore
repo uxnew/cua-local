@@ -1,0 +1,11 @@
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+.env
+cua-local.mcp.json
+*.local
+/tmp/
+coverage/
+dist/
+traces/

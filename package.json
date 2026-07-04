@@ -1,0 +1,30 @@
+{
+  "name": "cua-local",
+  "version": "0.3.19",
+  "description": "Computer Use-like local Mac control for AI assistants via MCP.",
+  "type": "module",
+  "bin": {
+    "cua-local": "./cua-local.mjs"
+  },
+  "scripts": {
+    "start": "node cua-local.mjs",
+    "doctor": "node doctor.mjs",
+    "check": "node --check cua-local.mjs && node --check doctor.mjs && node --check repair-system-events.mjs && node --check computer-loop-runner.mjs",
+    "smoke": "node diagnostics/smoke-health.mjs && node diagnostics/smoke-risk-guard.mjs && node diagnostics/smoke-screen-state.mjs && node diagnostics/smoke-coordinate-transform.mjs",
+    "demo": "node computer-loop-runner.mjs safe-move-sample --app Calculator",
+    "health": "node cua-local.mjs --health",
+    "repair:system-events": "node repair-system-events.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "computer-use",
+    "macos",
+    "automation",
+    "accessibility",
+    "applescript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
